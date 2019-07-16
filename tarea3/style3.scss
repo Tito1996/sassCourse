@@ -1,0 +1,34 @@
+$my-shadow: 15px 10px 14px 12px rgba(199,44,199,0.72);
+.quote{
+    -webkit-box-shadow: $my-shadow;
+    -moz-box-shadow: $my-shadow;
+    box-shadow: $my-shadow;
+    background: {
+        color: #f5b400;
+    }
+    text: {
+        align: center;
+    }
+    h1{
+        a{
+            color: darkgray;  
+            &:hover {
+                color: lightgray;
+            }
+        }
+        color: darkgray;
+        font: {
+            size: 0.9em;
+        }
+        
+    }
+    p {
+        font: {
+            style: italic;
+            family: 'Lucida Sans', Verdana, sans-serif;
+            size: 1.5em;
+            variant: small-caps;
+            weight: 600;
+        }
+    }
+}

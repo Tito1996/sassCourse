@@ -1,0 +1,20 @@
+p{
+    span {
+        color: blue;
+    } 
+}
+$bg-color:red;
+#UNO{
+    background-color:$bg-color;
+    color: aqua;
+}
+#DOS{
+    background-color: $bg-color;
+    color: bisque;
+}
+.contenedor-main{
+    display: flex;
+    
+    padding: 2em 2em;
+    margin-right: 2em;
+}
