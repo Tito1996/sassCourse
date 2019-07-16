@@ -8,13 +8,21 @@ p span {
 #DOS {
   background-color: red;
   color: bisque; }
-header{
-  display: flex;
-  justify-content: space-between;
-}
+
 .contenedor-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2em 2em;
   margin-right: 2em; }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+nav a {
+  margin-right: 2em;
+  margin-top: .5em; }

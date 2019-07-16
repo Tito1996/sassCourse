@@ -1,3 +1,7 @@
+/** Variables **/
+/** Funciones **/
+/** Mixins **/
+/** Estilos **/
 .quote {
   -webkit-box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
@@ -18,3 +22,19 @@
         color: darkgreen; }
   .quote p {
     font-style: italic; }
+  .quote .btn-like {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: green; }
+  .quote .btn-dislike {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: red; }

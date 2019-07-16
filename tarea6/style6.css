@@ -18,3 +18,15 @@
         color: darkgreen; }
   .quote p {
     font-style: italic; }
+  .quote .btn-like {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: green; }
+  .quote .btn-dislike {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: red; }

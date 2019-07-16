@@ -1,0 +1,68 @@
+/** Variables **/ 
+$author_color: brown;
+$quote_background: lightgrey;
+$quote_shadow: 10px 7px 18px 0px rgba(0,0,0,0.75);
+$quote_spaces: (padding: 2.5em, margin: 1.5em);
+
+
+/** Funciones **/
+
+
+
+/** Mixins **/
+@mixin btn($radius, $color: white) {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font: {
+        family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        weight: bold;
+    }
+}
+
+@mixin myshadow($sombra) {
+    -webkit-box-shadow: $sombra;
+    -moz-box-shadow: $sombra;
+    box-shadow: $sombra;
+}
+
+
+/** Estilos **/ 
+.quote {
+    @include myshadow($quote_shadow);
+    padding: map_get($quote_spaces, "padding");
+    margin: map_get($quote_spaces, "margin");
+    background-color: $quote_background;
+    text: {
+        align: center;
+    }
+    h1 {
+        color: $author_color;
+        font: {
+            family: 'Lucida Sans', Verdana, sans-serif;
+            size: 1.5em;
+            variant: small-caps;
+            weight: 600;
+        }
+        a {
+            color: $author_color;
+            &:hover {
+                color: darkgreen;
+            }
+        }
+    }
+    p {
+        font: {
+            style: italic;
+        }
+    }
+    .btn-like{
+        @include btn($radius: 20px);
+        background-color: green;
+    }
+    .btn-dislike{
+        @include btn($radius: 20px);
+        background-color: red;
+    }
+}
